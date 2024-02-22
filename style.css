@@ -1,7 +1,9 @@
 body {
     width: 99vw;
-    height: 100vh;
+    height: 105vh;
     background-color: black;
+    display: flex;
+    flex-direction: column-reverse;
 }
 
 #bg {
@@ -192,10 +194,9 @@ body {
 
 .tej-footer {
     width: 100vw;
-    position: relative;
-/*     top: 193vh; */
-/*     bottom: calc(-50vh + 50%); */
-    bottom:0px;
+     position: absolute;
+     /* top: 93vh; 
+    bottom: 0px; */ 
     left: calc(-50vw + 50%);
 }
 #socialmd{
