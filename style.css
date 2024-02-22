@@ -160,3 +160,28 @@ body {
     gap: 70px;
     margin-inline: 30px;
 }
+.quote{
+    width: 100%;
+    text-align: center;
+    height: auto;
+    display:flex;
+    flex-direction: column;
+    position: absolute;
+    top: 120px;
+    color:white;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+#h1quote{
+    font-weight: bolder;
+    font-size: 350%;
+    margin-bottom: 20px;
+}
+#h2quote{
+    color:rgb(255, 51, 0);
+}
+#autotyped{
+    font-size: 170%;
+    
+}
