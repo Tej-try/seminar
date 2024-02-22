@@ -194,7 +194,8 @@ body {
     width: 100vw;
     position: relative;
 /*     top: 193vh; */
-    bottom: calc(-50vh + 50%);
+/*     bottom: calc(-50vh + 50%); */
+    bottom:0px;
     left: calc(-50vw + 50%);
 }
 #socialmd{
