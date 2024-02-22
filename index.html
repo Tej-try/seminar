@@ -53,8 +53,12 @@
         </form>
       </div>
     </nav>
-<!--Health Condition-->
-
+<!--Quote-->
+<div class="quote">
+  <h1 id="h1quote">Transform your body, ignite your soul.</h1>
+  <h2 id="h2quote">Start your fitness journey today !</h2>
+  <p id="autotyped"></p>
+</div>
 
 
 
@@ -89,15 +93,38 @@
 
   function visible(){
     var diva=document.getElementById("incident");
+    var quote=document.getElementsByClassName("quote");
     var pro=window.getComputedStyle(diva).getPropertyValue("display");
     if(pro=="none"){
       diva.style.display="block";
+      quote.style.display="none";
   }
   else{
     diva.style.display="none";
-
+    quote.style.display="block";
   }
   }
+  function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+ }
+  async function autotype(){
+    var at=document.getElementById("autotyped");
+    var str="You are Unstoppable.";
+    var ch="";
+    var i=0;
+    while(true){
+      if(i>str.length){
+        i=0;
+        at.innerHTML="";
+        ch="";
+      }
+      ch=ch+str.charAt(i);
+      at.innerHTML=ch+"|";
+      await sleep(300);
+      i++;
+    }
+  }
+  autotype();
 </script>
 
 </html>
