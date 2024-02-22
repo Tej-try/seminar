@@ -193,7 +193,8 @@ body {
 .tej-footer {
     width: 100vw;
     position: relative;
-    top: 193vh;
+/*     top: 193vh; */
+    bottom: calc(-50vh + 50%);
     left: calc(-50vw + 50%);
 }
 #socialmd{
