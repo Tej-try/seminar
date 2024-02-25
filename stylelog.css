@@ -78,7 +78,7 @@ body {
     position: absolute;
     top: 90px;
     left: 0px;
-    background: linear-gradient(to right, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 0));
+    background: linear-gradient(to right, rgba(0, 0, 0, 1) 40%, rgba(0, 0, 0, 0));
     width: 100vw;
     height: 400px;
     color: white;
@@ -91,7 +91,7 @@ body {
 
 .incident {
     height: 100%;
-    width: 40%;
+    width: 60%;
     font-family: Arial, Helvetica, sans-serif;
     overflow: hidden;
 }
@@ -100,6 +100,7 @@ body {
 
     overflow: hidden;
     height: 100px;
+    width:70%;
 }
 
 #startword {
@@ -216,9 +217,13 @@ body {
 }
 
 .tej-icon {
-    margin-right: 10px;
+    margin-inline: 10px;
     color: white;
     width: 30px;
+    transform: scale(1.4,1.4);
+}
+.tej-icon:hover{
+    transform: scale(1.6,1.6);
 }
 
 .personal {
@@ -236,6 +241,7 @@ body {
 .tej-card {
     /* border:1px solid rgba(128, 128, 128, 0.808); */
     box-shadow: 0px 0px 10px rgba(128, 128, 128, 0.808);
+    margin-inline: 30px;
 
 }
 
@@ -277,4 +283,13 @@ body {
     flex-direction: column;
     flex-wrap: wrap;
     margin: 10px;
+}
+.tej-icon-dark{
+    margin-inline: 15px;
+    transform: scale(1.5,1.5); 
+}
+.acc-det{
+    display: flex;
+    flex-wrap: wrap;
+    
 }
