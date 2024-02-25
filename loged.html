@@ -19,7 +19,7 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-tej fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-tej fixed-top container-fluid">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
       aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -30,32 +30,30 @@
       <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
         <li class="nav-item active">
           <a class="nav-link nav-tej active" href="#">
-            <span class="material-symbols-outlined tej-item">
-              Home
-            </span>
+           
             Home
           </a>
         </li>
         <li class="nav-item ">
           <a class="nav-link nav-tej" href="#">
             Health Codition
-            <span class="material-symbols-outlined">
-              arrow_drop_down
-            </span>
           </a>
         </li>
         <li class="nav-item ">
-          <a class="nav-link nav-tej" href="#">Plan</a>
+          <a class="nav-link nav-tej" href="#">Nutrition</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link nav-tej" id="sideabout" href="#">Workouts</a>
         </li>
         <li class="nav-item">
           <a class="nav-link nav-tej" href="https://www.anytimefitness.co.in/blog/">Blogs</a>
         </li>
-        <li class="nav-item ">
-          <a class="nav-link nav-tej" id="sideabout" href="#">About</a>
-        </li>
         <li class="nav-item">
-          <a class="nav-link nav-tej" onclick="visible()" href="#">Preview</a>
+          <a class="nav-link nav-tej" onclick="visible()" href="#incident">About</a>
         </li>
+        <!-- <li class="nav-item">
+          <a class="nav-link nav-tej" href="#Personal-id">Contact</a>
+        </li> -->
       </ul>
       <form class="form-inline my-2 my-lg-0">
         <!-- <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"> -->
@@ -98,7 +96,7 @@
 
 
   <!--Personal info-->
-  <div class="personal">
+  <div class="personal" id="Personal-id" >
     <!--My Info-->
     <div class="card mb-3 tej-card" style="max-width: 540px;">
       <div class="row g-0">
@@ -110,7 +108,30 @@
             <h5 class="card-title">Tejas Jadhav</h5>
             <p class="card-text"> A brilliant engineering student with a passion for innovation and a knack for coding.
               Showcasing his intelligence and creativity in the web devlopment field..</p>
-            <p class="card-text"><small class="text-body-secondary">Last updated 1 day ago</small></p>
+            <p class="card-text"><small class="text-body-secondary">
+
+              <div class="acc-det container-fluid">
+                <a href="">
+                  <i class="fa-brands fa-facebook tej-icon-dark"></i>
+                </a>
+                <a href="">
+                  <i class="fab fa-twitter tej-icon-dark"></i>
+                </a>
+                <a href="">
+                  <i class="fab fa-google tej-icon-dark"></i>
+                </a>
+                <a href="">
+                  <i class="fab fa-instagram tej-icon-dark"></i>
+                </a>
+                <a href="">
+                  <i class="fab fa-linkedin tej-icon-dark"></i>
+                </a>
+                <a href="">
+                  <i class="fab fa-github tej-icon-dark"></i>
+                </a>
+              </div>
+
+            </small></p>
           </div>
         </div>
       </div>
@@ -126,7 +147,30 @@
             <h5 class="card-title">Swayambhu Gupta</h5>
             <p class="card-text">A sports aficionado driven by passion and a civil services aspirant with unwavering
               determination. His dual pursuits reflect his dedication and promise as a future leader..</p>
-            <p class="card-text"><small class="text-body-secondary">Last updated 1 day ago</small></p>
+            <p class="card-text"><small class="text-body-secondary">
+
+              <div class="acc-det container-fluid">
+                <a href="">
+                  <i class="fa-brands fa-facebook tej-icon-dark"></i>
+                </a>
+                <a href="">
+                  <i class="fab fa-twitter tej-icon-dark"></i>
+                </a>
+                <a href="">
+                  <i class="fab fa-google tej-icon-dark"></i>
+                </a>
+                <a href="">
+                  <i class="fab fa-instagram tej-icon-dark"></i>
+                </a>
+                <a href="">
+                  <i class="fab fa-linkedin tej-icon-dark"></i>
+                </a>
+                <a href="">
+                  <i class="fab fa-github tej-icon-dark"></i>
+                </a>
+              </div>
+
+            </small></p>
           </div>
         </div>
       </div>
@@ -298,7 +342,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
-</body>
+
 
 <script>
 
@@ -375,5 +419,5 @@
   
 
 </script>
-
+</body>
 </html>
