@@ -30,7 +30,7 @@
       <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
         <li class="nav-item active">
           <a class="nav-link nav-tej active" href="#">
-           
+
             Home
           </a>
         </li>
@@ -55,11 +55,14 @@
           <a class="nav-link nav-tej" href="#Personal-id">Contact</a>
         </li> -->
       </ul>
-      <form class="form-inline my-2 my-lg-0">
+      <form class="form-inline my-2 my-lg-0 tej-div">
         <!-- <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"> -->
         <button id="SignUp" class="btn btn-outline-warning my-2 my-sm-0 tej-black" type="submit"><a href="Pricing.html"
             class="tej-flex tej-1 " target="_blank"><i class="fa-solid fa-crown"></i>Subcription</a></button>
+        <button id="SignUp" class="btn btn-outline-success my-2 my-sm-0 tej-black" type="submit"><a href="index.html"
+            class="tej-flex tej-1 ">Log Out</a></button>
       </form>
+
     </div>
   </nav>
   <!--Quote-->
@@ -96,7 +99,7 @@
 
 
   <!--Personal info-->
-  <div class="personal" id="Personal-id" >
+  <div class="personal" id="Personal-id">
     <!--My Info-->
     <div class="card mb-3 tej-card" style="max-width: 540px;">
       <div class="row g-0">
@@ -110,28 +113,28 @@
               Showcasing his intelligence and creativity in the web devlopment field..</p>
             <p class="card-text"><small class="text-body-secondary">
 
-              <div class="acc-det container-fluid">
-                <a href="">
-                  <i class="fa-brands fa-facebook tej-icon-dark"></i>
-                </a>
-                <a href="">
-                  <i class="fab fa-twitter tej-icon-dark"></i>
-                </a>
-                <a href="">
-                  <i class="fab fa-google tej-icon-dark"></i>
-                </a>
-                <a href="">
-                  <i class="fab fa-instagram tej-icon-dark"></i>
-                </a>
-                <a href="">
-                  <i class="fab fa-linkedin tej-icon-dark"></i>
-                </a>
-                <a href="">
-                  <i class="fab fa-github tej-icon-dark"></i>
-                </a>
-              </div>
+                <div class="acc-det container-fluid">
+                  <a href="">
+                    <i class="fa-brands fa-facebook tej-icon-dark"></i>
+                  </a>
+                  <a href="">
+                    <i class="fab fa-twitter tej-icon-dark"></i>
+                  </a>
+                  <a href="">
+                    <i class="fab fa-google tej-icon-dark"></i>
+                  </a>
+                  <a href="">
+                    <i class="fab fa-instagram tej-icon-dark"></i>
+                  </a>
+                  <a href="">
+                    <i class="fab fa-linkedin tej-icon-dark"></i>
+                  </a>
+                  <a href="">
+                    <i class="fab fa-github tej-icon-dark"></i>
+                  </a>
+                </div>
 
-            </small></p>
+              </small></p>
           </div>
         </div>
       </div>
@@ -149,28 +152,28 @@
               determination. His dual pursuits reflect his dedication and promise as a future leader..</p>
             <p class="card-text"><small class="text-body-secondary">
 
-              <div class="acc-det container-fluid">
-                <a href="">
-                  <i class="fa-brands fa-facebook tej-icon-dark"></i>
-                </a>
-                <a href="">
-                  <i class="fab fa-twitter tej-icon-dark"></i>
-                </a>
-                <a href="">
-                  <i class="fab fa-google tej-icon-dark"></i>
-                </a>
-                <a href="">
-                  <i class="fab fa-instagram tej-icon-dark"></i>
-                </a>
-                <a href="">
-                  <i class="fab fa-linkedin tej-icon-dark"></i>
-                </a>
-                <a href="">
-                  <i class="fab fa-github tej-icon-dark"></i>
-                </a>
-              </div>
+                <div class="acc-det container-fluid">
+                  <a href="">
+                    <i class="fa-brands fa-facebook tej-icon-dark"></i>
+                  </a>
+                  <a href="">
+                    <i class="fab fa-twitter tej-icon-dark"></i>
+                  </a>
+                  <a href="">
+                    <i class="fab fa-google tej-icon-dark"></i>
+                  </a>
+                  <a href="">
+                    <i class="fab fa-instagram tej-icon-dark"></i>
+                  </a>
+                  <a href="">
+                    <i class="fab fa-linkedin tej-icon-dark"></i>
+                  </a>
+                  <a href="">
+                    <i class="fab fa-github tej-icon-dark"></i>
+                  </a>
+                </div>
 
-            </small></p>
+              </small></p>
           </div>
         </div>
       </div>
@@ -344,80 +347,81 @@
     crossorigin="anonymous"></script>
 
 
-<script>
+  <script>
 
 
-  function visible() {
-    var diva = document.getElementById("incident");
-    var quote = document.getElementsByClassName("quote");
-    var pro = window.getComputedStyle(diva).getPropertyValue("display");
-    if (pro == "none") {
-      diva.style.display = "block";
-      quote.style.display = "none";
-    }
-    else {
-      diva.style.display = "none";
-      quote.style.display = "block";
-    }
-  }
-  function sleep(ms) {
-    return new Promise(resolve => setTimeout(resolve, ms));
-  }
-  async function autotype() {
-    var at = document.getElementById("autotyped");
-    var str = "No one can stop you..!";
-    var ch = "";
-    var i = 0;
-    while (true) {
-      if (i > str.length) {
-        i = 0;
-        at.innerHTML = "";
-        ch = "";
+    function visible() {
+      var diva = document.getElementById("incident");
+      var quote = document.getElementsByClassName("quote");
+      var pro = window.getComputedStyle(diva).getPropertyValue("display");
+      if (pro == "none") {
+        diva.style.display = "block";
+        quote.style.display = "none";
       }
-      ch = ch + str.charAt(i);
-      at.innerHTML = ch + "|";
-      await sleep(300);
-      i++;
+      else {
+        diva.style.display = "none";
+        quote.style.display = "block";
+      }
     }
-  }
-  autotype();
-  async function numtrack2() {
-    var di = document.getElementById("ttrack2");
-    var i = 0;
-    var ch = "";
-    while (i <= 200) {
-     
-      ch = i.toString();
-      di.innerHTML = ch+"+";
-      await sleep(0.01);
-      i++;
+    function sleep(ms) {
+      return new Promise(resolve => setTimeout(resolve, ms));
     }
-  }
-  
-  async function numtrack1() {
-    var dit = document.getElementById("tej-track1");
-    var ip = 0;
-    while (ip <= 100) {
-      dit.innerHTML = ip.toString()+"+";
-      await sleep(5);
-      ip++;
+    async function autotype() {
+      var at = document.getElementById("autotyped");
+      var str = "No one can stop you..!";
+      var ch = "";
+      var i = 0;
+      while (true) {
+        if (i > str.length) {
+          i = 0;
+          at.innerHTML = "";
+          ch = "";
+        }
+        ch = ch + str.charAt(i);
+        at.innerHTML = ch + "|";
+        await sleep(300);
+        i++;
+      }
     }
-  }
- 
-  async function numtrack3() {
-    var dip = document.getElementById("ntrack3");
-    var it = 0;
-    while (it <= 50) {
-      dip.innerHTML = it.toString()+"+";
-      await sleep(10);
-      it++;
-    }
-  }
-  numtrack3();
-  numtrack1();
-  numtrack2();
-  
+    autotype();
+    async function numtrack2() {
+      var di = document.getElementById("ttrack2");
+      var i = 0;
+      var ch = "";
+      while (i <= 200) {
 
-</script>
+        ch = i.toString();
+        di.innerHTML = ch + "+";
+        await sleep(0.01);
+        i++;
+      }
+    }
+
+    async function numtrack1() {
+      var dit = document.getElementById("tej-track1");
+      var ip = 0;
+      while (ip <= 100) {
+        dit.innerHTML = ip.toString() + "+";
+        await sleep(5);
+        ip++;
+      }
+    }
+
+    async function numtrack3() {
+      var dip = document.getElementById("ntrack3");
+      var it = 0;
+      while (it <= 50) {
+        dip.innerHTML = it.toString() + "+";
+        await sleep(10);
+        it++;
+      }
+    }
+    numtrack3();
+    numtrack1();
+    numtrack2();
+
+
+  </script>
 </body>
+
 </html>
