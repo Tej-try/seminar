@@ -87,6 +87,7 @@ body {
     flex-wrap: wrap;
     display: none;
     padding-top: 10px;
+    z-index: 3;
 }
 
 .incident {
@@ -201,6 +202,10 @@ body {
     bottom: 0px; */
     left: calc(-50vw + 50%);
 }
+.tej-div{
+    display: flex;
+    gap:15px;
+}
 
 #socialmd {
     margin-left: 20px;
@@ -217,7 +222,7 @@ body {
 }
 
 .tej-icon {
-    margin-inline: 10px;
+    margin: 15px;
     color: white;
     width: 30px;
     transform: scale(1.4,1.4);
@@ -285,7 +290,7 @@ body {
     margin: 10px;
 }
 .tej-icon-dark{
-    margin-inline: 15px;
+    margin: 15px;
     transform: scale(1.5,1.5); 
 }
 .acc-det{
